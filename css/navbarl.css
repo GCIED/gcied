@@ -1,0 +1,109 @@
+.header2 {
+  padding: 0;
+  z-index: 5; }
+  .header2 .navbar {
+    font-family: Montserrat, sans-serif;
+    background-color: #000000;
+    font-size: 15px !important;
+    letter-spacing: 4px;
+    border-radius: 0 !important;
+    margin: 0;
+    border: 0 !important;
+    padding: 0.45em 0em 0.45em 0em; }
+  .header2 .navbar li a,
+  .header2 .navbar .navbar-brand {
+    color: #ffffff !important; }
+    .header2 .navbar li a .logo,
+    .header2 .navbar .navbar-brand .logo {
+      height: 65%;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media screen and (max-width: 500px) {
+        .header2 .navbar li a .logo,
+        .header2 .navbar .navbar-brand .logo {
+          left: 10%; } }
+    .header2 .navbar li a .gitamlogo,
+    .header2 .navbar .navbar-brand .gitamlogo {
+      position: absolute;
+      top: 7%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      height: 3em;
+      width: auto; }
+      @media screen and (max-width: 700px) {
+        .header2 .navbar li a .gitamlogo,
+        .header2 .navbar .navbar-brand .gitamlogo {
+          height: 2em; } }
+      @media screen and (max-width: 450px) {
+        .header2 .navbar li a .gitamlogo,
+        .header2 .navbar .navbar-brand .gitamlogo {
+          top: 6%;
+          left: 15%; } }
+  .header2 .navbar-nav li a:hover {
+    color: #eb0a0a !important; }
+  .header2 .navbar-nav li.active a {
+    color: #d4bfbf !important;
+    background-color: #878788 !important; }
+  .header2 .navigation2 {
+    height: 70px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .header2 .navigation2 .navbar-right li a {
+      padding: 1.3em; }
+    .header2 .navigation2 .navbar-right .dropdown .dropdown-menu li a {
+      padding: 0.3em 1.5em 0.5em 1.5em !important; }
+
+.short {
+  display: none;
+  top: 5%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.onScrollnavigation2 {
+  height: 100vh !important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.onScrolllogo {
+  height: 50% !important;
+  width: auto;
+  position: absolute;
+  top: 38% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  @media screen and (max-width: 500px) {
+    .onScrolllogo {
+      height: 35% !important; } }
+
+.copy {
+  text-align: center;
+  background: #000000;
+  color: #F6F6F6;
+  padding-bottom: 2em; }
+  .copy img {
+    height: 20px;
+    width: auto; }
+
+/*# sourceMappingURL=navbarl.css.map */

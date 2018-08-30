@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+header {
+    z-index: 9;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.header1 {
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+}
+
+.body1 {
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    z-index: 1;
+    margin-top: 3em;
+    .section_headding {
+        font-size: 3em;
+        text-align: center;
+        padding: 1em;
+        width: 100% !important;
+        @media screen and (max-width: 600px) {
+            padding: 1em 0.3em 1em 0.3em;
+            font-size: 2.3em;
+        }
+    }
+    .section_content {
+        font-size: 1.5em;
+        text-align: center;
+        li {
+            font-size: 0.8em;
+            text-align: left;
+        }
+    }
+    .incubation {
+        padding: 2em 0 2em 0;
+        background: #000000;
+        color: #F6F6F6;
+    }
+    .SEED {
+        color: #000000;
+        padding: 1em 5em 5em 5em;
+        @media screen and (max-width: 600px) {
+            padding: 3em 2em 2em 2em;
+        }
+    }
+    @mixin section($back) {
+        background: $back;
+        padding: 3em 5em 5em 5em;
+        @media screen and (max-width: 600px) {
+            padding: 3em 2em 2em 2em;
+        }
+    }
+    .MENTORING {
+        @include section(#f6f6f6);
+    }
+    .TECHNOLOGY {
+        @include section(#ffffff);
+    }
+    .ACCESS {
+        @include section(#f6f6f6);
+    }
+    .footer_section {
+        background: #000000;
+    }
+    .footer {
+        .section_headding {
+            width: 100% !important;
+            padding: none !important;
+        }
+        text-align: center;
+        padding: 2.5em 2em 5em 2em;
+        color: #d3d3d3;
+        a {
+            color: #d3d3d3;
+            text-decoration: none !important;
+            text-align: center;
+        }
+        .col-md-4 {
+            @media screen and (max-width: 600px) {
+                padding-bottom: 3em !important;
+            }
+        }
+        input,
+        textarea {
+            background: #F6F6F6;
+            color: #000000;
+            letter-spacing: 1px;
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        .btn-default {
+            background: #F6F6F6;
+            color: #000000;
+            position: relative;
+            width: 100%;
+            font-size: 1.3em;
+        }
+    }
+}
+
+.overlay ul li {
+    height: calc(100% / 7);
+}

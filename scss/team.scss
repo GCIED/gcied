@@ -1,4 +1,99 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+header {
+    z-index: 999;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.header1 {
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+}
+
+.body1 {
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    z-index: 1;
+    margin-top: 3em;
+    .section_headding {
+        font-size: 3em;
+        text-align: center;
+        padding: 1em;
+        width: 100% !important;
+        @media screen and (max-width: 600px) {
+            padding: 1em 0.5em 1em 0.5em;
+        }
+    }
+    .section_content{
+        font-size: 1.5em;
+        text-align: center;
+        li{
+            font-size: 0.8em;
+            text-align: left;
+        }
+    }
+    .incubation{
+        padding: 2em 0 2em 0;
+        background: #000000;
+        color: #F6F6F6;
+    }
+    .SEED {
+        color: #000000;
+        
+        padding: 1em 5em 5em 5em;
+        @media screen and (max-width: 600px) {
+            padding: 3em 2em 2em 2em;
+        }
+    }
+    .footer_section{
+        background: #000000;
+    }
+    .footer {
+       
+        .section_headding{
+            width: 100% !important;
+           padding: none !important;
+        }
+        text-align: center;
+        padding: 2.5em 2em 5em 2em;
+        color: #d3d3d3;
+        a {
+            color: #d3d3d3;
+            text-decoration: none !important;
+            text-align: center;
+            
+        }
+        .col-md-4{
+            @media screen and (max-width:600px) {
+                padding-bottom: 3em !important;
+            }
+        }
+        input,
+        textarea {
+            background: #F6F6F6;
+            color: #000000;
+            letter-spacing: 1px;
+        }
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        .btn-default {
+            background: #F6F6F6;
+            color: #000000;
+            position: relative;
+            width: 100%;
+            font-size: 1.3em;
+            
+        }
+    }
+}
 $width: 250px;
 $height: 320px;
 body{
@@ -33,7 +128,7 @@ body{
             @include center(99);            
         }
         .image_overlay_svg {
-            @include center(999);           
+            @include center(99);           
             overflow: hidden;
             border: 2px solid #f9f9fa;
         }
@@ -43,7 +138,7 @@ body{
             left: 50%;
             width: 210px;
             transform: translate(-50%, -50%);
-            z-index: 999;
+            z-index: 99;
             color: #000000;
             display: inline-block;
             text-align: left;
@@ -63,7 +158,7 @@ body{
             bottom: 3%;
             left: 0%;
             transform: translate(-50%, -50%);
-            z-index: 999;
+            z-index: 99;
             display: none;
             color: #ffffff;
             text-align: left;
@@ -104,172 +199,8 @@ body{
         display: none;
     }
 }
-
-
-// ------------------------------------------------------------
-
-
-
-h2 {
-    font-size: 24px !important;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-    font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-}
-h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-.jumbotron {
-    background-color: #000000;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-}
-.container-fluid {
-    padding: 60px 50px;
-}
-.bg-grey {
-    background-color: #f6f6f6;
-}
-.logo-small {
-    color: #000000;
-    font-size: 50px;
-}
-.logo {
-    color: #000000;
-    font-size: 200px;
-}
-
-.item span {
-    font-style: normal;
-}
-.panel {
-    border: 1px solid #000000;
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-}
-.panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
-.panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #3BB9FF;
-}
-.panel-heading {
-    color: #fff !important;
-    background-color: #000000 !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.panel-footer {
-    background-color: white !important;
-}
-.panel-footer h3 {
-    font-size: 32px;
-}
-.panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-}
-.panel-footer .btn {
-    margin: 15px 0;
-    background-color: #000000;
-    color: #fff;
-}
-.navbar {
-    margin-bottom: 0;
-    background-color:#000000;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-    font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-}
-.navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #000000 !important;
-    background-color: #fff !important;
-}
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-}
-
-.navbar-brand {
-padding: 0px;
-}
-.navbar-brand>img {
-height: 100%;
-padding: 1px;
-width: 100%;
+.overlay ul li {
+    height: calc(100% / 7);
 }
 
 
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: white;
-}
-.slideanim {visibility:hidden;}
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-}
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
-@media screen and (max-width: 768px) {
-  .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-  }
-  .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .logo {
-      font-size: 150px;
-  }
-}

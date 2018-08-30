@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+header {
+    z-index: 9;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.gcied {
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4em;
+    width: 100%;
+    line-height: 1cm;
+    text-align: center;
+    height: 2cm;
+    .title {
+        width: 100%;
+        position: relative;
+        opacity: 0;
+        animation: fadeInLeft 1s ease forwards;
+        word-spacing: 0.25cm;
+        font-weight: 400 !important;
+        @media screen and (max-width: 660px) {
+            word-spacing: 0.1cm;
+        }
+    }
+    .T1 {
+        animation-delay: .4s !important;
+    }
+    .T2 {
+        animation-delay: .5s !important;
+    }
+    .T3 {
+        animation-delay: .6s !important;
+    }
+    .T4 {
+        animation-delay: .7s !important;
+    }
+    .T5 {
+        animation-delay: .8s !important;
+    }
+    .T6 {
+        animation-delay: .9s !important;
+    }
+    .T7 {
+        animation-delay: 1s !important;
+    }
+    .impact {
+        word-spacing: 0.1cm;
+        opacity: 0;
+        font-weight: 100;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 1.25em;
+        width: 98%;
+        height: 15vh;
+        bottom: 6%;
+    }
+    @media screen and (max-width: 420px) {
+        font-size: 1.2em;
+        width: 98%;
+        height: 13vh;
+        bottom: 21%;
+    }
+}
+
+@mixin fade($opacity,
+$left) {
+    opacity: $opacity;
+    left: $left;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        @include fade(0,
+        -5%);
+    }
+    100% {
+        @include fade(1,
+        0%);
+    }
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        @include fade(1,
+        0%);
+    }
+    100% {
+        @include fade(0,
+        -5%);
+    }
+}
+
+@keyframes LeftRight {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 10%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.clickToFull {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    padding: 0.8em 4em 0.7em 3.8em;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    z-index: 9;
+    img {
+        width: 40px;
+        padding-right: 0.5em;
+        animation: LeftRight 2s ease forwards infinite;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width: 700px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 370px) {
+        padding: 0.8em 4em 0.8em 3.8em;
+        width: 75%;
+        bottom: 10%;
+    }
+}
+
+.body1 {
+    font-family: 'Montserrat', sans-serif;
+    height: auto;    
+    z-index: 1;
+    margin-top: 3em;
+    .section_headding {
+        font-size: 3em;
+        text-align: center;
+        padding: 1em;
+    }
+    .about {
+        color: #000000;
+        text-align: center;
+        padding: 9em 5em 5em 5em;
+        @media screen and (max-width: 600px) {
+            padding: 8em 2em 2em 2em;
+        }
+        .about_paragraph {
+            font-size: 1.5em;
+        }
+    }
+    .mission {
+        background: #F6F6F6;
+        padding: 3em 5em 5em 5em;
+        @media screen and (max-width: 600px) {
+            padding: 3em 2em 2em 2em;
+        }
+        p {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+    .statups {
+        padding-top: 4em;
+        padding-bottom: 3em;
+        @media screen and (max-width: 600px) {
+            padding: 1em 2em 2em 2em;
+        }
+        .more{
+            position: relative;
+            left:0;           
+           button{
+               width: 30%;
+               font-size: 1.5em;               
+               @media screen and (max-width:600px) {
+                   width: 70%;
+               }
+           }
+             
+        }
+        .row{
+            margin-top: 5em;
+        }
+        .card {
+            width: 280px;
+            height: 460px;
+            margin-bottom: 10%;
+            background-color: #FAEBD7;
+            border: #ddd5d5 solid 2px;
+            transition: all 0.5s;
+            border-radius: 10px;
+            @media screen and (max-width: 600px) {
+                margin-bottom: 3em;
+            }
+            
+            img {
+                margin-top: 0px;
+                width: 100%;
+                height: 50%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .name{
+                font-size: 26px;
+                font-weight: 600;
+            }
+            .info {
+                text-align: center;
+                font-style: normal;
+                font-size: 1em;
+                font-family: name;
+                padding-top: 1.5em;
+            }
+        }
+        .card:hover{
+            -webkit-box-shadow: 0px 0px 197px -49px rgba(0, 0, 0, 0.49);
+            -moz-box-shadow: 0px 0px 197px -49px rgba(0, 0, 0, 0.49);
+            box-shadow: 0px 0px 197px -49px rgba(0, 0, 0, 0.49);
+            transform: scale(1.02);
+        }
+       
+       
+    }  
+.footer_section{
+    background: #000000;
+}
+.footer {
+    .section_headding{
+        width: 100% !important;
+       padding: none !important;
+    }
+    text-align: center;
+    padding: 2.5em 0.5em 5em 0.5em ;
+    @media screen and (min-width: 700px) {
+        padding: 2.5em 2em 5em 2em;
+    }
+    color: #d3d3d3;
+    a {
+        color: #d3d3d3;
+        text-decoration: none !important;
+        text-align: center;
+        
+    }
+    .col-md-4{
+        @media screen and (max-width:600px) {
+            padding-bottom: 3em !important;
+        }
+    }
+    input,
+    textarea {
+        background: #F6F6F6;
+        color: #000000;
+        letter-spacing: 1px;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    .btn-default {
+        background: #F6F6F6;
+        color: #000000;
+        position: relative;
+        width: 100%;
+        font-size: 1.3em;
+        
+    }
+}
+}
+
+

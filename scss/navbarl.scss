@@ -1,0 +1,131 @@
+
+.header2 {   
+    padding: 0;
+    z-index: 5;
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        background-color: #000000;
+        font-size: 15px !important;
+        letter-spacing: 4px;
+        border-radius: 0 !important;
+        margin: 0;
+        border: 0 !important;
+        padding: 0.45em 0em 0.45em 0em;
+    }
+    .navbar li a,
+    .navbar .navbar-brand {
+        color: #ffffff !important;
+        .logo {
+            height: 65%;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;   
+            @media screen and (max-width: 500px) {
+                left: 10%;
+            }         
+        }
+        .gitamlogo{
+            position: absolute;
+            top: 7%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            height: 3em;
+            width: auto;
+            @media screen and (max-width: 700px) {
+                height: 2em;
+            }
+            @media screen and (max-width: 450px) {
+                top: 6%;
+                left: 15%;
+            }
+           
+        }
+    }
+    .navbar-nav li a:hover {
+        color: rgb(235, 10, 10) !important;
+    }
+    .navbar-nav li.active a {
+        color: rgb(212, 191, 191) !important;
+        background-color: #878788 !important;
+    }
+    .navigation2 {
+        height: 70px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        
+        .navbar-right {
+            li {
+                a {
+                    padding: 1.3em;
+                }
+            }
+            .dropdown {
+                .dropdown-menu {
+                    li {
+                        a {
+                            padding: 0.3em 1.5em 0.5em 1.5em !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.short {
+    display: none;
+    top: 5%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.onScrollnavigation2 {
+    height: 100vh !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.onScrolllogo {
+    height: 50% !important;
+    width: auto;
+    position: absolute;
+    top: 38% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    @media screen and (max-width: 500px) {
+        height: 35% !important;
+    }
+}
+
+
+.copy{
+    text-align: center;
+    background: #000000;
+    color: #F6F6F6;
+    padding-bottom: 2em;
+    
+    img{
+        height: 20px;
+        width: auto;
+    }
+}

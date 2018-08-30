@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+header {
+  z-index: 9;
+  position: relative;
+  top: 0;
+  width: 100%; }
+
+@media screen and (min-width: 700px) {
+  .header1 {
+    display: none; } }
+
+.body1 {
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  z-index: 1;
+  margin-top: 3em; }
+  .body1 .section_headding {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    width: 100% !important; }
+    @media screen and (max-width: 600px) {
+      .body1 .section_headding {
+        padding: 1em 0.5em 1em 0.5em; } }
+  .body1 .incubation {
+    padding: 2em 0 2em 0;
+    background: #000000;
+    color: #F6F6F6; }
+  .body1 .footer_section {
+    background: #000000; }
+  .body1 .footer {
+    text-align: center;
+    padding: 2.5em 2em 5em 2em;
+    color: #d3d3d3; }
+    .body1 .footer .section_headding {
+      width: 100% !important;
+      padding: none !important; }
+    .body1 .footer a {
+      color: #d3d3d3;
+      text-decoration: none !important;
+      text-align: center; }
+    @media screen and (max-width: 600px) {
+      .body1 .footer .col-md-4 {
+        padding-bottom: 3em !important; } }
+    .body1 .footer input,
+    .body1 .footer textarea {
+      background: #F6F6F6;
+      color: #000000;
+      letter-spacing: 1px; }
+    .body1 .footer input[type="number"]::-webkit-outer-spin-button,
+    .body1 .footer input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .body1 .footer input[type="number"] {
+      -moz-appearance: textfield; }
+    .body1 .footer .btn-default {
+      background: #F6F6F6;
+      color: #000000;
+      position: relative;
+      width: 100%;
+      font-size: 1.3em; }
+
+.statups {
+  padding-top: 4em;
+  padding-bottom: 3em; }
+  @media screen and (max-width: 600px) {
+    .statups {
+      padding: 1em 2em 2em 2em; } }
+  .statups .more {
+    position: relative;
+    width: 100%; }
+    .statups .more button {
+      position: relative;
+      left: 75%;
+      width: 20%;
+      font-size: 1.3em; }
+      @media screen and (max-width: 600px) {
+        .statups .more button {
+          width: 70%;
+          position: relative;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); } }
+  .statups .row {
+    margin-top: 5em; }
+    .statups .row .heading {
+      font-size: 2em;
+      text-align: center;
+      margin: 2em 1em 2em 1em;
+      color: #0000006c; }
+    .statups .row .heading_pro {
+      font-size: 2em;
+      text-align: center;
+      color: #0000006c;
+      padding-top: 1em !important;
+      padding-bottom: 2em; }
+  .statups .card {
+    width: 280px;
+    height: 460px;
+    margin-bottom: 10%;
+    background-color: #FAEBD7;
+    border: #ddd5d5 solid 2px;
+    transition: all 0.5s;
+    border-radius: 10px; }
+    @media screen and (max-width: 600px) {
+      .statups .card {
+        margin-bottom: 3em; } }
+    .statups .card img {
+      margin-top: 0px;
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    .statups .card .name {
+      font-size: 26px;
+      font-weight: 600; }
+    .statups .card .info {
+      text-align: center;
+      font-style: normal;
+      font-size: 1em;
+      font-family: name;
+      padding-top: 1.5em; }
+  .statups .card:hover {
+    -webkit-box-shadow: 0px 0px 197px -49px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0px 197px -49px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 0px 197px -49px rgba(0, 0, 0, 0.49);
+    transform: scale(1.02); }
+
+.overlay ul li {
+  height: calc(100% / 7); }
+
+/*# sourceMappingURL=startups.css.map */
